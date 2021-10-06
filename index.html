@@ -1,0 +1,46 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./app.js"></script>
+    <title>Bidding App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bidding App</h1>
+    </header>
+    <main>
+      <div class="list">
+        <h2>Bids:</h2>
+        <ul id="bidList"></ul>
+      </div>
+      <div class="inputs">
+        <div class="form">
+          <h2>User 1</h2>
+          <input type="text" id="bidder1" />
+          <button
+            onclick="bidding.add(document.getElementById('bidder1').value)"
+          >
+            Bid
+          </button>
+        </div>
+        <div class="form">
+          <h2>User 2</h2>
+          <input type="text" id="bidder2" />
+          <button
+            onclick="bidding.add(document.getElementById('bidder2').value)"
+          >
+            Bid
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer><button onclick="bidding.clear()">Reset</button></footer>
+  </body>
+</html>
