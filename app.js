@@ -1,5 +1,5 @@
 /** @format */
-
+//by Izac Peterson
 class app {
   constructor(bids) {
     this.bids = [];
